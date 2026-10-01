@@ -1,61 +1,83 @@
-# Usep Saeful Adzkia - Portfolio Website
+# sfladzzz. | Personal Portfolio
 
-Modern, interactive, and highly responsive personal portfolio built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.
+A personal portfolio for **Usep Saeful Adzkia**, an Informatics Engineering student focused on frontend development. The site presents a profile, education and experience, technical skills, selected projects, and contact details in a responsive Next.js application.
 
-## Features
+## Overview
 
-- 🎨 Dark mode design with emerald green accent
-- ✨ GSAP scroll-triggered animations
-- 🌐 3D animated sphere background with Three.js
-- 📱 Fully responsive (mobile, tablet, desktop)
-- ⚡ Built with Next.js 14 App Router
-- 🎯 TypeScript for type safety
-- 🎭 Interactive hover effects and smooth transitions
-- 🔮 WebGL-powered 3D graphics
+- Responsive portfolio layout with About, Education & Experience, Skills, Projects, and Contact sections
+- Personal portrait served from the local `public/images` asset directory
+- Pointer-reactive hexagon background with a graphite, blue, and subtle amber palette
+- Fixed navigation with in-page links
+- GSAP and ScrollTrigger entrance effects
+- Accessible portrait alternative text and visible keyboard focus styles
+
+## Technology
+
+- [Next.js 14](https://nextjs.org/) with the App Router
+- [React 18](https://react.dev/) and TypeScript
+- [Tailwind CSS](https://tailwindcss.com/)
+- [GSAP](https://gsap.com/) with ScrollTrigger
+- [Three.js](https://threejs.org/) ecosystem dependencies for visual capabilities
+- [Lucide React](https://lucide.dev/) icons
 
 ## Getting Started
 
-### Installation
+### Requirements
+
+- Node.js 18.17 or newer
+- npm
+
+### Install and run
 
 ```bash
-# Install dependencies
 npm install
-
-# Run development server
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the portfolio.
+Open [http://localhost:3000](http://localhost:3000) to view the site. The development server refreshes as source files are edited.
 
-### Build for Production
+### Production build
 
 ```bash
 npm run build
 npm start
 ```
 
-## Tech Stack
+## Available Scripts
 
-- **Framework:** Next.js 14 (App Router)
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS
-- **Animation:** GSAP + ScrollTrigger
-- **3D Graphics:** Three.js + React Three Fiber + Drei
-- **Icons:** Lucide React
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the local development server |
+| `npm run build` | Create an optimized production build and run Next.js validation |
+| `npm start` | Serve the production build |
+| `npm run lint` | Run the Next.js ESLint command |
 
-## Sections
+## Project Structure
 
-1. **Hero** - Introduction with name, role, and CTA buttons
-2. **About** - Professional summary and background
-3. **Education & Experience** - Academic and organizational experience
-4. **Skills** - Technical and soft skills in organized cards
-5. **Projects** - Featured portfolio projects
-6. **Contact** - Contact information and social links
+```text
+app/
+	components/
+		ThreeBackground.tsx  Interactive hexagon background
+	globals.css            Global styles and background colors
+	layout.tsx             Root layout, font, and page metadata
+	page.tsx               Portfolio sections and page interactions
+public/
+	images/
+		profile.jpeg         Portfolio portrait
+```
 
-## Customization
+## Personalizing the Content
 
-Edit `app/page.tsx` to update content, colors, or sections.
+- Update profile copy, navigation, projects, and contact details in `app/page.tsx`.
+- Replace `public/images/profile.jpeg` to use a different portrait. Keep the same filename, or update the `Image` source in `app/page.tsx`.
+- Adjust the global palette and animation keyframes in `app/globals.css` and `app/components/ThreeBackground.tsx`.
+- Review all contact links, social URLs, dates, and academic details before publishing.
+- Entries marked **Sample data** or **Demo** are placeholders and should be replaced with verified experience or removed before professional use.
 
-## License
+## Deployment
 
-© 2026 Usep Saeful Adzkia. Built with Next.js, GSAP, Three.js & Tailwind CSS.
+This project can be deployed to any platform that supports Next.js. For Vercel, import the Git repository and use the default Next.js build settings. No environment variables are currently required by the application.
+
+## Repository
+
+GitHub: [usepadzkia93/portofolio](https://github.com/usepadzkia93/portofolio)
